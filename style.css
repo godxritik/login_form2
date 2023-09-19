@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.box{
+    display: flex;
+    position: absolute;
+    border: 1px solid black;
+    padding: 5em 4em;
+    flex-direction: column;
+    background-color: black;
+    border-radius: 20px;
+    /* box-shadow: 0px 0px 20px 8px rgb(97, 97, 97); */
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+}
+
+.box h1{
+    color: white;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.box input{
+    width: 20em;
+    height: 3em;
+    margin-bottom: 1.5em;
+    padding-left: 20px;
+    border-radius: 20px;
+    border: 1px solid grey;
+    background: transparent;
+    outline: none;
+    color: white;
+}
+
+.box button{
+    color: white;
+    /* background-color: rgb(190, 74, 208); */
+    background: transparent;
+    
+    margin-left: 4em;
+    margin-top: 2em;
+    height: 2.5em;
+    width: 12em;
+    border: 1px solid rgba(128, 128, 128, 0.3);
+    border-radius: 15px;
+    transition: all 0.5s ease-in-out;
+    
+}
+
+.box button:hover{
+    background-color: rgb(190, 74, 208);
+    box-shadow: 0px 0px 60px 5px rgba(225, 65, 187, 0.61);
+}
+
+.bg{
+    position: relative;
+    border-radius: 20px;
+    /* border: 1px solid black; */
+    width: 400px;
+    height: 59vh;
+    overflow: hidden;
+}
+.bg .b1{
+    background-color:  rgb(190, 74, 208);
+    width: 45vw;
+    height: 70%;
+    transform-origin: bottom right;
+    overflow: hidden;
+    margin-right: 300px;
+    animation: rotate 3s  infinite linear;
+    margin-right:200px;
+    position: absolute;
+    right: 1px;
+}
+.bg .b2{
+    background-color:  rgb(58, 219, 255);
+    width: 45vw;
+    height: 70%;
+    transform-origin: top left;
+    overflow: hidden;
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    animation: rotate 3s  infinite linear;
+}
+
+@keyframes rotate {
+    100%{
+        transform: rotate(1turn);
+    }
+}
